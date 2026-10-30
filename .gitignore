@@ -38,7 +38,9 @@ local.properties
 /android/app/profile
 /android/app/release
 
-# Xcode / iOS related
+# Xcode / iOS / SwiftPM related
+.build/
+.swiftpm/
 **/ios/**/GeneratedPluginRegistrant.h
 **/ios/**/GeneratedPluginRegistrant.m
 **/ios/**/*.mode1v3

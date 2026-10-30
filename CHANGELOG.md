@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.0] — 2026-10-30
 
 ### Added
+- Swift Package Manager (SwiftPM) support for iOS via `ios/constant_device_id/Package.swift`, aligning with modern Flutter iOS toolchains while retaining CocoaPods fallback compatibility via `.podspec`.
 - In-memory caching for `ConstantDeviceId.getId()`: subsequent calls return instantly (~0 ms) without repeating platform channel round-trips or storage I/O.
 - `ConstantDeviceId.cachedId` synchronous getter to access the cached ID without asynchronous awaiting once initialized.
 - `ConstantDeviceId.clearCache()` to clear only the in-memory cache without modifying persistent storage.
